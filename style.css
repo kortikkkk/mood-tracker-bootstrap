@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-nav .nav-link {
+  color: var(--bs-dark) !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link.active {
+  color: var(--bs-primary) !important;
+  font-weight: 500;
+}
+
+.hero-image {
+  max-width: 520px;
+  animation: float 6s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(22, 32, 54, 0.08);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.faq-item i.bi-chevron-right.rotated {
+  transform: rotate(90deg);
+  transition: transform 0.25s ease;
+}
+.faq-item i.bi-chevron-right {
+  transition: transform 0.25s ease;
+}
+
+a.text-secondary:hover {
+  color: var(--bs-primary) !important;
+}
+
+@media (max-width: 991px) {
+  .hero-image { max-width: 420px; }
+}

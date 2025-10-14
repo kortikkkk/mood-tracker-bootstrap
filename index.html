@@ -1,32 +1,292 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мій щоденний трекер настрою</title>
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
-    crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Landing Page</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anony">
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="container mt-5">
-    <h1 class="text-center mb-4">Мій щоденний трекер настрою</h1>
-    <p class="text-center">Запиши свій настрій або не важливу думку за сьогодні.</p>
-    <textarea class="form-control mb-3" rows="3" placeholder="Як ви себе почуваєте сьогодні?"></textarea>
-    <div class="text-center mb-3">
-      <button class="btn btn-primary">Зберегти думку</button>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand text-dark fs-2 fw-bold" href="#">AwesomeProduct</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#heroSection">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#pricing" class="btn btn-primary rounded-pill py-2 px-3 fw-semibold ms-lg-3 mt-2 mt-lg-0">Get Started
+          <i class="bi bi-arrow-right ms-2 mb-2"></i></a>
+      </div>
     </div>
-    <div class="p-3 mb-3 bg-success text-white rounded">😊 шикарно</div>
-    <div class="p-3 mb-3 bg-info text-dark rounded">😌 Чіл</div>
-    <div class="p-3 mb-3 bg-warning text-dark rounded">😴 Спатииии\їстиии</div>
-    <div class="p-3 mb-3 bg-primary text-white rounded">🤔 Типу розумний</div>
-    <div class="p-3 mb-3 bg-danger text-white rounded">😁 Все пучком</div>
-  </div>
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
-    crossorigin="anonymous"></script>
-</body>
-</html>
+  </nav>
+
+  <section id="heroSection" class="container bg-white py-5 min-vh-100 d-flex align-items-center">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h1 class="display-3 fw-bold mb-4">Make your workflow effortless</h1>
+        <p class="lead mb-5 text-secondary">Powerful product to help teams collaborate, analyze and deliver faster.
+          Built with simplicity in mind.</p>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center">
+          <a href="#pricing" class="btn btn-primary rounded-pill py-2 px-3 fw-semibold me-sm-3 mb-3 mb-sm-0">
+            Start free trial <i class="bi bi-arrow-right ms-2 mb-2"></i>
+          </a>
+
+          <a href="#" class="text-decoration-none d-flex align-items-center text-dark">
+            <span class="btn rounded-circle border-3 border-primary text-white d-flex align-items-center justify-content-center me-2"
+                  style="width:40px; height:40px;">
+              <i class="bi bi-play-fill text-primary fs-3"></i>
+            </span>
+            Watch video
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex justify-content-center">
+        <img src="https://images.unsplash.com/photo-1527443224156-8d6b15a67f37?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+             alt="Hero illustration" class="img-fluid hero-image rounded">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-white py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2">About</span>
+          <h2 class="display-5 fw-bold">We help teams build better products</h2>
+          <p class="mt-4 text-secondary">Our platform unifies collaboration, analytics and deployment so your team
+            spends more time shipping features and less time stuck in meetings.</p>
+          <a href="#features" class="btn btn-primary rounded-pill py-2 px-3 fw-semibold mt-4 icon-link">Learn more
+            <i class="bi bi-arrow-right ms-2 mb-2"></i></a>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+               alt="About image" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2">Features</span>
+        <h2 class="h1 fw-bold text-dark">Everything you need to scale</h2>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+               alt="Features image" class="img-fluid rounded">
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                <i class="bi bi-check-lg fs-4 text-primary me-3"></i>
+                <h5 class="mb-0 fw-bold">Intuitive Dashboard</h5>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                <i class="bi bi-graph-up fs-4 text-primary me-3"></i>
+                <h5 class="mb-0 fw-bold">Real-time Analytics</h5>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                <i class="bi bi-people fs-4 text-primary me-3"></i>
+                <h5 class="mb-0 fw-bold">Collaborative Tools</h5>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                <i class="bi bi-lock fs-4 text-primary me-3"></i>
+                <h5 class="mb-0 fw-bold">Secure Data Storage</h5>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                <i class="bi bi-sliders fs-4 text-primary me-3"></i>
+                <h5 class="mb-0 fw-bold">Customizable Reports</h5>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                <i class="bi bi-clock-history fs-4 text-primary me-3"></i>
+                <h5 class="mb-0 fw-bold">24/7 Support</h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-5 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+               alt="More features" class="img-fluid rounded">
+        </div>
+
+        <div class="col-lg-6 order-lg-1">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex">
+                <i class="bi bi-shield-check me-3 fs-2 text-primary mt-1"></i>
+                <div class="content">
+                  <h4 class="fw-bold fs-5">Secure & Reliable</h4>
+                  <p class="text-secondary fs-6">Enterprise-grade encryption and uptime.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex">
+                <i class="bi bi-box-seam me-3 fs-2 text-primary mt-1"></i>
+                <div class="content">
+                  <h4 class="fw-bold fs-5">Seamless Integration</h4>
+                  <p class="text-secondary fs-6">Plugins and APIs to fit your stack.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex">
+                <i class="bi bi-globe me-3 fs-2 text-primary mt-1"></i>
+                <div class="content">
+                  <h4 class="fw-bold fs-5">Global Accessibility</h4>
+                  <p class="text-secondary fs-6">Fast CDN and multi-region support.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex">
+                <i class="bi bi-chat-text me-3 fs-2 text-primary mt-1"></i>
+                <div class="content">
+                  <h4 class="fw-bold fs-5">Dedicated Support</h4>
+                  <p class="text-secondary fs-6">Human-first support team.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex">
+                <i class="bi bi-lightbulb me-3 fs-2 text-primary mt-1"></i>
+                <div class="content">
+                  <h4 class="fw-bold fs-5">Intelligent Insights</h4>
+                  <p class="text-secondary fs-6">Smart recommendations for your product.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex">
+                <i class="bi bi-bar-chart me-3 fs-2 text-primary mt-1"></i>
+                <div class="content">
+                  <h4 class="fw-bold fs-5">Scalable & Flexible</h4>
+                  <p class="text-secondary fs-6">Grow without friction.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="pricing" class="bg-white py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2">Pricing</span>
+        <h2 class="h1 fw-bold text-dark">Choose a plan</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+            <div class="card-body p-4">
+              <h4 class="fw-bold text-success">Free Plan</h4>
+              <div class="d-flex justify-content-center align-items-baseline my-3">
+                <span class="h1 fw-bold text-dark">$0</span>
+                <span class="text-secondary">/mo</span>
+              </div>
+              <div class="fs-1 text-success mb-4"><i class="bi bi-box"></i></div>
+              <ul class="list-unstyled mb-4 text-secondary">
+                <li>Basic features</li>
+                <li>1 project</li>
+                <li class="text-decoration-line-through">Priority support</li>
+              </ul>
+              <a href="#" class="btn btn-outline-success rounded-pill px-5">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 border-0 shadow-lg rounded-4 text-center">
+            <div class="card-body p-4">
+              <h4 class="fw-bold text-primary">Starter Plan</h4>
+              <div class="d-flex justify-content-center align-items-baseline my-3">
+                <span class="h1 fw-bold text-dark">$15</span>
+                <span class="text-secondary">/mo</span>
+              </div>
+              <div class="fs-1 text-primary mb-4"><i class="bi bi-send"></i></div>
+              <ul class="list-unstyled mb-4 text-secondary">
+                <li>Everything in Free</li>
+                <li>5 projects</li>
+                <li>Standard support</li>
+              </ul>
+              <a href="#" class="btn btn-primary rounded-pill px-5">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+            <div class="card-body p-4">
+              <h4 class="fw-bold text-warning">Business Plan</h4>
+              <div class="d-flex justify-content-center align-items-baseline my-3">
+                <span class="h1 fw-bold text-dark">$49</span>
+                <span class="text-secondary">/mo</span>
+              </div>
+              <div class="fs-1 text-warning mb-4"><i class="bi bi-airplane"></i></div>
+              <ul class="list-unstyled mb-4 text-secondary">
+                <li>All Starter features</li>
+                <li>Team seats</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#" class="btn btn-outline-warning rounded-pill px-5">Buy Now</a>
+            </div>
+          </div>
+        </div>
